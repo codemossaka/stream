@@ -1,7 +1,9 @@
 <Server>
-    <version>0.12.1</version>
+    <version>0.12.1</version> <!-- Assurez-vous que la version correspond à celle installée -->
+    <LogLevel>info</LogLevel> <!-- Niveau de log global -->
     <VirtualHosts>
         <VirtualHost>
+            <Name>default</Name>
             <Applications>
                 <Application>
                     <Name>live</Name>
@@ -11,6 +13,11 @@
                         </RTMP>
                         <WebRTC>
                             <Enabled>true</Enabled>
+                            <ICEServers>
+                                <ICEServer>
+                                    <URL>stun:stun.l.google.com:19302</URL> <!-- Serveur STUN pour WebRTC -->
+                                </ICEServer>
+                            </ICEServers>
                             <ICECandidates>
                                 <Candidate>
                                     <Type>host</Type>
@@ -21,6 +28,8 @@
                         <HLS>
                             <Enabled>true</Enabled>
                             <HLSPath>/recordings/hls</HLSPath>
+                            <HLSFragment>3</HLSFragment>
+                            <HLSPlaylistLength>10</HLSPlaylistLength>
                         </HLS>
                     </Protocols>
                     <Streams>
