@@ -4,7 +4,7 @@ services:
     container_name: ome
     ports:
       - "3333:3333"   # Port pour la gestion de l'API REST
-      - "1936:1935"   # RTMP Port pour la diffusion RTMP (entrée depuis OBS Studio)
+      - "1934:1935"   # RTMP Port pour la diffusion RTMP (entrée depuis OBS Studio)
       - "8888:8080"   # HTTP Port pour la diffusion en HLS (et autres protocoles)
       - "9000:9000/udp" # WebRTC UDP Port (faible latence)
     volumes:
