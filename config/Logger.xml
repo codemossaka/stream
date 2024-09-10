@@ -1,0 +1,10 @@
+<Logger>
+    <LogLevel>info</LogLevel>
+    <Outputs>
+        <Console>true</Console>
+        <File>true</File>
+        <FilePath>/var/log/ovenmediaengine/ovenmediaengine.log</FilePath>
+        <MaxFileSize>10485760</MaxFileSize> <!-- 10MB -->
+        <MaxFileCount>10</MaxFileCount>
+    </Outputs>
+</Logger>
