@@ -1,4 +1,5 @@
 <Server>
+    <version>0.12.1</version>
     <VirtualHosts>
         <VirtualHost>
             <Applications>
