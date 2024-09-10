@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  ome:
+    image: airensoft/ovenmediaengine:latest
+    container_name: ome
+    ports:
+      - "3333:3333"   # Port pour la gestion de l'API REST
+      - "1935:1935"   # RTMP Port pour la diffusion RTMP (entrée depuis OBS Studio)
+      - "8080:8080"   # HTTP Port pour la diffusion en HLS (et autres protocoles)
+      - "9000:9000/udp" # WebRTC UDP Port (faible latence)
+    volumes:
+      - ./config:/opt/ovenmediaengine/bin/origin_conf # Configuration OvenMediaEngine
+      - ./recordings:/recordings # Dossier pour enregistrer les flux
+    environment:
+      - TZ=Etc/UTC
+    restart: unless-stopped
