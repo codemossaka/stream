@@ -1,5 +1,5 @@
 <Server>
-    <version>0.12.1</version> <!-- Assurez-vous que la version correspond à celle installée -->
+    <version>0.12.1</version> <!-- Remplacer par la version installée -->
     <LogLevel>info</LogLevel> <!-- Niveau de log global -->
     <VirtualHosts>
         <VirtualHost>
