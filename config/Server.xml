@@ -21,7 +21,7 @@
                             <ICECandidates>
                                 <Candidate>
                                     <Type>host</Type>
-                                    <Address>185.251.25.97</Address>
+                                    <Address>185.251.25.97</Address> <!-- Remplace par ton IP -->
                                 </Candidate>
                             </ICECandidates>
                         </WebRTC>
