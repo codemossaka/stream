@@ -13,7 +13,7 @@
                             <ICECandidates>
                                 <Candidate>
                                     <Type>host</Type>
-                                    <Address>82.146.35.0</Address>
+                                    <Address>185.251.25.97</Address>
                                 </Candidate>
                             </ICECandidates>
                         </WebRTC>
